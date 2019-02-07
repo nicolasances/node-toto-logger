@@ -30,7 +30,7 @@ var logger = require('toto-logger');
 Log, based on the type of log
 ```
 logger.apiIn(correlationId, method, path);
-logger.apiOut(correlationId, method, path);
+logger.apiOut(correlationId, microservice, method, path);
 logger.eventIn(correlationId, topic);
 logger.eventOut(correlationId, topic);
 logger.compute(correlationId, message, logLevel);
